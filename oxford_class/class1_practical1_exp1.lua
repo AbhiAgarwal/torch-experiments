@@ -12,5 +12,7 @@ local t = torch.Tensor({{1,2,3},{4,5,6},{7,8,9}})
 local col = t:narrow(2,2,1)
 
 -- col:resize(1,3)
+-- If col is resized like above the content also changes
+-- Changes from {2,5,8} to {2,3,4}
 
 print(col)
